@@ -1,0 +1,42 @@
+version: '3.9'
+name: ISTEA
+networks:
+      isteaAPP:
+        driver: bridge
+      common_network:
+        external: true
+
+services:
+  apibackend:
+    build:
+      context: ./practicaParcial2
+      dockerfile: Dockerfile
+    environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "7111:8080"  
+    networks:
+          isteaAPP:
+            aliases:
+              - apiBackend
+          common_network:
+            aliases:
+              - apiBackend
+
+  apiconsumer:
+    build:
+      context: ./apiConsumer
+      dockerfile: Dockerfile
+    ports:
+      - "7211:8082"
+    networks:
+          isteaAPP:
+            aliases:
+              - apiConsumer
+          common_network:
+            aliases:
+              - apiConsumer
+    environment:
+          - ASPNETCORE_ENVIRONMENT=Development
+          - ASPNETCORE_HTTP_PORTS=8082
