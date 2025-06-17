@@ -74,3 +74,4 @@ C:\Users\leitoo\Desktop\ISTEA\webservidor\practicaParcial2\apiConsumer\obj\Debug
 C:\Users\leitoo\Desktop\ISTEA\webservidor\practicaParcial2\apiConsumer\obj\Debug\net8.0\apiConsumer.pdb
 C:\Users\leitoo\Desktop\ISTEA\webservidor\practicaParcial2\apiConsumer\obj\Debug\net8.0\apiConsumer.genruntimeconfig.cache
 C:\Users\leitoo\Desktop\ISTEA\webservidor\practicaParcial2\apiConsumer\obj\Debug\net8.0\ref\apiConsumer.dll
+C:\Users\leitoo\Desktop\ISTEA\webservidor\apiBackend\apiConsumer\obj\Debug\net8.0\apiConsumer.sourcelink.json
